@@ -17,8 +17,9 @@ class UserTest {
         user.setUpdatedAt(LocalDateTime.now());
         System.out.println(user.toString());
 
+        User user2 = new User(null, "yourName", "yourEmail", LocalDateTime.now(), LocalDateTime.now());
         User user1 = new User("myName", "myEmail");
-        User user2 = new User("yourName", "yourEmail", LocalDateTime.now(), LocalDateTime.now());
+
         User user3 = User.builder()
                 .name("mr.kkang")
                 .email("kkang@naver.com")
