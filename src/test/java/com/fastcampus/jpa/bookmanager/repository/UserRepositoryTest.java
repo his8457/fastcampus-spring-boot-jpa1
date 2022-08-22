@@ -25,8 +25,10 @@ class UserRepositoryTest {
 
         userRepository.saveAll(Lists.newArrayList(user1, user2));
 
-        List<User> result = userRepository.findAll();
+  //      List<User> result = userRepository.findAll();
 
-        result.forEach(System.out::println);
+//        result.forEach(System.out::println);
+
+        System.out.println(userRepository.count());
     }
 }
